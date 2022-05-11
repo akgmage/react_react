@@ -22,9 +22,14 @@ const list = [
 function App() {
   return (
     <div>
-      <h1>Hello</h1>
+      <h1>My Hacker Stories</h1>
       <label htmlFor="search">Search: </label>
       <input id="search" type="text" />
+
+      <hr />
+      {list.map(function (item) {
+        return <li>{item.title}</li>;
+      })}
     </div>
   );
 }
