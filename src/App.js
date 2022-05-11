@@ -17,6 +17,22 @@ const list = [
     points: 5,
     objectID: 1,
   },
+  {
+    title: "React Native",
+    url: "https://reactnative.dev/",
+    author: "Akk Ggg",
+    num_comments: 2,
+    points: 3,
+    objectID: 2,
+  },
+  {
+    title: "Flutter",
+    url: "https://flutter.dev/",
+    author: "Akk Ggg",
+    num_comments: 2,
+    points: 4,
+    objectID: 3,
+  },
 ];
 
 function App() {
