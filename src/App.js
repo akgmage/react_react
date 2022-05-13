@@ -21,7 +21,7 @@ const App = () => {
     {
       title: "React Native",
       url: "https://reactnative.dev/",
-      author: "Akk Ggg",
+      author: "Facebook and community",
       num_comments: 2,
       points: 3,
       objectID: 2,
@@ -29,7 +29,7 @@ const App = () => {
     {
       title: "Flutter",
       url: "https://flutter.dev/",
-      author: "Akk Ggg",
+      author: "Google, Lars Bak and Kasper Lund",
       num_comments: 2,
       points: 4,
       objectID: 3,
