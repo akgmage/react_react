@@ -1,51 +1,53 @@
 import * as React from "react";
 
-const list = [
-  {
-    title: "React",
-    url: "https://reactjs.org/",
-    author: "Jordan Walke",
-    num_comments: 3,
-    points: 4,
-    objectID: 0,
-  },
-  {
-    title: "Redux",
-    url: "https://reduxjs.org/",
-    author: "Dan Abramov, Andrew Clark",
-    num_comments: 2,
-    points: 5,
-    objectID: 1,
-  },
-  {
-    title: "React Native",
-    url: "https://reactnative.dev/",
-    author: "Akk Ggg",
-    num_comments: 2,
-    points: 3,
-    objectID: 2,
-  },
-  {
-    title: "Flutter",
-    url: "https://flutter.dev/",
-    author: "Akk Ggg",
-    num_comments: 2,
-    points: 4,
-    objectID: 3,
-  },
-];
+const App = () => {
+  const stories = [
+    {
+      title: "React",
+      url: "https://reactjs.org/",
+      author: "Jordan Walke",
+      num_comments: 3,
+      points: 4,
+      objectID: 0,
+    },
+    {
+      title: "Redux",
+      url: "https://reduxjs.org/",
+      author: "Dan Abramov, Andrew Clark",
+      num_comments: 2,
+      points: 5,
+      objectID: 1,
+    },
+    {
+      title: "React Native",
+      url: "https://reactnative.dev/",
+      author: "Akk Ggg",
+      num_comments: 2,
+      points: 3,
+      objectID: 2,
+    },
+    {
+      title: "Flutter",
+      url: "https://flutter.dev/",
+      author: "Akk Ggg",
+      num_comments: 2,
+      points: 4,
+      objectID: 3,
+    },
+  ];
 
-const App = () => (
-  <div>
-    <h1>My Hacker Stories</h1>
+  return (
+    <div>
+      <h1>My Hacker Stories</h1>
 
-    <Search />
+      <Search />
 
-    <hr />
+      <hr />
 
-    <List />
-  </div>
-);
+      <List list={stories} />
+    </div>
+  );
+};
 
 const Search = () => {
   const handleChange = (event) => {
@@ -59,9 +61,9 @@ const Search = () => {
   );
 };
 
-const List = () => (
+const List = (props) => (
   <ul>
-    {list.map((item) => {
+    {props.list.map((item) => {
       return (
         <li key={item.objectID}>
           <span>
